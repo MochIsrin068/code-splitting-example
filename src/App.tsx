@@ -1,24 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./styles/App.css";
+
+import DynamicImport from "./examples/dynamic-import";
+import Lazy from "./examples/lazy";
+import SuspenseExample from "./examples/suspense";
+import LoadableComponent from "./examples/loadable-component";
+import ReactRouter from "./examples/react-router";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{ padding: "10px 60px" }}>
+      <h2 style={{ borderBottom: "1px solid", paddingBottom: 10 }}>
+        Code Splitting Examples :
+      </h2>
+      <div>
+        {/* Dynamic Import */}
+        <DynamicImport />
+
+        {/* Lazy */}
+        {/* <Lazy /> */}
+
+        {/* Suspense */}
+        {/* <SuspenseExample /> */}
+
+        {/* React Router */}
+        {/* <ReactRouter /> */}
+
+        {/* Loadable Components */}
+        {/* <LoadableComponent /> */}
+      </div>
     </div>
   );
 }
