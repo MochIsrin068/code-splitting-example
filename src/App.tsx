@@ -6,6 +6,7 @@ import Lazy from "./examples/lazy";
 import SuspenseExample from "./examples/suspense";
 import LoadableComponent from "./examples/loadable-component";
 import ReactRouter from "./examples/react-router";
+import ErrorBoundary from "./examples/error-bundaries";
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
 
         {/* Loadable Components */}
         {/* <LoadableComponent /> */}
+
+        {/* Error Boudaries */}
+        {/* <ErrorBoundary /> */}
       </div>
     </div>
   );
